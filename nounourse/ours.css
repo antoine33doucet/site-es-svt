@@ -1,0 +1,183 @@
+.fondSite{
+background: url('background.jpg') ;
+margin:0; 
+margin-top:0 ;
+background-size: 100%;
+
+}
+body{
+margin:0px;
+background-color: #898987;
+}
+h2{
+font-family: "Dragon", Helvetica, Arial, sans-serif;
+letter-spacing:10px;
+
+}
+.bande-bas{
+text-align: right;
+margin-right:10px;
+font-size:20px;
+}
+
+p{
+	font-size:30px;
+	font-weight: 600;
+	line-height:60px;
+}
+
+.texte_cote_solution{
+	font-size:30px;
+	font-weight: 600;
+	line-height:50px;
+	
+}
+
+
+.titre-contour{
+border:solid;
+text-align: center;
+border-color: #005C64;
+color: #00B4C6;
+letter-spacing: 4px;
+font-style:italic;
+font-family: "polaire", Helvetica, Arial, sans-serif;
+font-size: 35px;
+font-weight: bold;
+width:450px;
+height: 110px; /*centrée titre au milieu du cadre*/
+vertical-align:middle; /*centrée titre au milieu du cadre*/
+line-height: 55px; /*centrée titre au milieu du cadre*/
+background-size: 60%;
+background-color: #027D89;
+background-position: center;
+position: center;
+margin-left:50px;
+margin-top:20px;
+margin-bottom:20px;
+}
+.presentation{
+background-color: rgba(0, 255, 255, 0.2);
+margin-left:20px; 
+padding:4px;
+line-height:40px;
+border:solid;
+font-size:20px;
+
+}
+
+h1{
+letter-spacing:5px;
+font-family: "feu", Helvetica, Arial, sans-serif;
+}
+
+li {
+          
+	letter-spacing: 2.9px;
+}
+
+/*css pour les boutons */
+
+
+.li2 {
+    list-style-type: none ; /* Suppression des puces */
+	letter-spacing: 2px;
+}
+
+.li2 > a {
+    display:block;                /* Transformation en block */
+    min-width: 110px;             /* Largeur minimale des liens */   
+    padding: 6px;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: #5185ff80;
+    color: #412f52;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 3px solid #8E67B3;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+	margin-top:0px;
+	font-weight:bold;
+}
+.menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    justify-content: center;     /* Alignements des liens dans le menu */
+	
+}
+
+.menu a:hover {
+  color: #fff;
+  border-color:#4C385F;
+  margin-top:0px;
+}/* ajouter un effet au survol des boutons*/
+
+
+/*permet la création de style d écriture perso*/
+@font-face { 
+	font-family: "feu";
+	font-weight: bold;
+	src: url('titre.ttf');
+}
+@font-face { 
+	font-family: "polaire";
+	font-weight: bold;
+	src: url('titre.ttf');
+}
+
+
+/*permet la transition de couleur page "bas de page"*/
+
+body {
+	background: linear-gradient(-45deg, #89F4FF, #6CBFC7, #047C87, #22585D);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.menu_deroulant{
+   display: none;
+	
+    min-width: 110px;             /* Largeur minimale des liens */   
+    padding: 6px;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: rgba(150, 96, 176, 1);
+    color: #412f52;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 3px solid #8E67B3;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+	margin-top:0px;
+	font-weight:bold;
+}
+
+.menu_deroulant a{
+    text-decoration: none;        /* Suppression du soulignement */
+    text-align: center;           /* Centrage du texte */   
+    color: #412f52;                  /* Couleur du texte */
+}
+
+
+.dropdown {
+   text-decoration: none;
+}
+
+.dropdown:hover .menu_deroulant {
+    display: block;
+	position: absolute;
+
+}
+
+
+
